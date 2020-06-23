@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/SquareImageResistenStyle"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/SquareImageResistenStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/SquareImageResistenStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/resistencia" />
+
+        <TextView
+            android:id="@+id/tv_banda1"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/brown" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/resistencia" />
+
+        <TextView
+            android:id="@+id/tv_banda2"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/resistencia" />
+
+        <TextView
+            android:id="@+id/tv_banda3"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/resistencia" />
+
+        <TextView
+            android:id="@+id/tv_banda4"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:background="@color/brown" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@color/resistencia" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView29"
+                style="@style/SquareImageResistenStyle"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView30"
+                style="@style/SquareImageResistenStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/textView31"
+                style="@style/SquareImageResistenStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/inicio_result"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv1_1"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/black"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv1_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/black"
+                        android:text="@string/cero"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv1_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/black"
+                        android:text="x10^0"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView style="@style/ActionButtonStyle" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv2_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/brown"
+                        android:text="@string/uno"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv2_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/brown"
+                        android:text="@string/uno"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv2_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/brown"
+                        android:text="x10^1"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv2_4"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/brown"
+                        android:text="@string/tolcafe"
+                        android:textColor="@android:color/background_light" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv3_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/red"
+                        android:text="@string/dos"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv3_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/red"
+                        android:text="@string/dos"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv3_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/red"
+                        android:text="x10^2"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv3_4"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/red"
+                        android:text="@string/tolrojo"
+                        android:textColor="@android:color/background_light" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv4_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/orange"
+                        android:text="@string/tres"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv4_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/orange"
+                        android:text="@string/tres"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView
+                        android:id="@+id/tv4_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/orange"
+                        android:text="x10^3"
+                        android:textColor="@android:color/background_light" />
+
+                    <TextView style="@style/ActionButtonStyle" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv5_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/yellow"
+                        android:text="@string/cuatro" />
+
+                    <TextView
+                        android:id="@+id/tv5_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/yellow"
+                        android:text="@string/cuatro" />
+
+                    <TextView
+                        android:id="@+id/tv5_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/yellow"
+                        android:text="x10^4" />
+
+                    <TextView style="@style/ActionButtonStyle" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv6_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/green"
+                        android:text="@string/cinco" />
+
+                    <TextView
+                        android:id="@+id/tv6_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/green"
+                        android:text="@string/cinco" />
+
+                    <TextView
+                        android:id="@+id/tv6_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/green"
+                        android:text="x10^5" />
+
+                    <TextView
+                        android:id="@+id/tv6_4"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/green"
+                        android:text="@string/tolverde" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv7_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="#03A9F4"
+                        android:text="@string/seis" />
+
+                    <TextView
+                        android:id="@+id/tv7_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/deepskyblue"
+                        android:text="@string/seis" />
+
+                    <TextView
+                        android:id="@+id/tv7_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/deepskyblue"
+                        android:text="x10^6" />
+
+                    <TextView
+                        android:id="@+id/tv7_4"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/deepskyblue"
+                        android:text="@string/tolazul" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv8_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/darkorchid"
+                        android:text="@string/siete" />
+
+                    <TextView
+                        android:id="@+id/tv8_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/darkorchid"
+                        android:text="@string/siete" />
+
+                    <TextView
+                        android:id="@+id/tv8_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/darkorchid"
+                        android:text="x10^7" />
+
+                    <TextView
+                        android:id="@+id/tv8_4"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/darkorchid"
+                        android:text="@string/tolmorado" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv9_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/gray"
+                        android:text="@string/ocho" />
+
+                    <TextView
+                        android:id="@+id/tv9_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/gray"
+                        android:text="@string/ocho" />
+
+                    <TextView
+                        android:id="@+id/tv9_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/gray"
+                        android:text="x10^8" />
+
+                    <TextView
+                        android:id="@+id/tv9_4"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/gray"
+                        android:text="@string/tolgris" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv10_1"
+                        style="@style/ActionButtonStyle"
+                        android:background="@android:color/background_light"
+                        android:text="@string/nueve" />
+
+                    <TextView
+                        android:id="@+id/tv10_2"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@android:color/background_light"
+                        android:text="@string/nueve" />
+
+                    <TextView
+                        android:id="@+id/tv10_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@android:color/background_light"
+                        android:text="x10^9" />
+
+                    <TextView style="@style/ActionButtonStyle" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView style="@style/ActionButtonStyle" />
+
+                    <TextView
+
+                        style="@style/ActionButtonStyle" />
+
+                    <TextView
+                        android:id="@+id/tv11_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/gold"
+                        android:text="@string/pmuno" />
+
+                    <TextView
+                        android:id="@+id/tv11_4"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/gold"
+                        android:text="@string/toldorado" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView style="@style/ActionButtonStyle" />
+
+                    <TextView
+
+                        style="@style/ActionButtonStyle" />
+
+                    <TextView
+                        android:id="@+id/tv12_3"
+
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/silver"
+                        android:text="@string/pmdos" />
+
+                    <TextView
+                        android:id="@+id/tv12_4"
+                        style="@style/ActionButtonStyle"
+                        android:background="@color/silver"
+                        android:text="@string/tolplata" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
